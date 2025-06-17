@@ -1,0 +1,36 @@
+
+* {
+margin: 0;
+
+}
+.Header {
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+   
+    }
+
+
+#menu {
+ 
+
+}
+
+
+
+.main {
+  background-color: white;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.fonte {
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
