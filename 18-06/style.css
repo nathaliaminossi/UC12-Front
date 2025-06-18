@@ -1,0 +1,32 @@
+.container_pai {
+    background-color: brown;
+    padding: 25px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.container_pai div {
+    padding: 25px;
+}
+
+#container_f1 {
+
+    background-color: aquamarine;
+
+}
+
+#container_f2 {
+
+    background-color: blueviolet;
+   align-self: flex-end;
+}
+
+#container_f3 {
+
+    background-color: blue;
+    
+}

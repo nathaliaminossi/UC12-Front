@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+
+}
+
+main {
+    background-color: rgb(8, 1, 1);
+    
+
+} 
+section {
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+       
+}
+
+#assistir {
+    background-color:rgb(82, 32, 32);
+    border-radius: 20px;
+    padding: 15px;
+    align-items: center;
+
+}
+
+#sobre {
+    background-color: rgb(82, 32, 32);
+    align-items: center;
+    border-radius: 20px;
+}
+
+#temporadas {
+    background-color: rgb(82, 32, 32);
+    border-radius: 20px;
+}
+
+#banner {
+
+    height: 500px;
+    background-image: url(https://static.posters.cz/image/hp/65835.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#banner div {
+    background-color: rgba(109, 13, 25, 0.514);
+    color: aliceblue;
+    padding: 50px;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.fonte {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cards {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 100px;
+    gap: 20px;
+ 
+
+}
+.card {
+    width: 200px;
+    height: 300px;
+}

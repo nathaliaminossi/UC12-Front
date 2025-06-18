@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    background-color: rgb(167, 105, 226);
+    justify-content: space-between;
+    align-items: center;
+    /*Ordem: Cima - direita - Baixo - esquerda*/
+    padding: 0px 15px 0px 15px;
+}
+main {
+    margin: 5px;
+  
+}
+a {
+    text-decoration: none; /*para tirar os sublinados do "home, sobre e contato"*/
+    color: aliceblue; /*Para mudar a cor*/
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+#Sobre {
+    background-color: rgb(214, 198, 193);
+}
+
+#Produtos {
+    background-color: rgb(142, 193, 197);
+}
+#Depoimento{
+    background-color: beige;
+}
+#banner {
+    height: 200px;
+    background-image: url(https://images.pexels.com/photos/32605945/pexels-photo-32605945.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+#banner div {
+    background-color: rgba(68, 131, 185, 0.445);
+    padding: 50px;
+    border-radius: 50px;
+    align-items: center;
+}
