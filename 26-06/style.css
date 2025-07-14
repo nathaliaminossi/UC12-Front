@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(14, 13, 13);
+}  
+
+header {
+    
+    height: 10vh;
+    background-color: rgba(253, 253, 253, 0.822);
+    display: flex;
+    padding: 0px 15px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+header img {
+    height: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container-banner {
+    background-image: url(loja.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.whatsapp-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+  
+  }
+
+  .whatsapp-icon img {
+    width: 60px;
+    height: 60px;
+  }

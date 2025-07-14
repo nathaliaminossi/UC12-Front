@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .botao-topo {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background: #ff6600;
+          color: white;
+          padding: 12px;
+          border-radius: 50%;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        </style>
+        
+        <button class="botao-topo">↑</button>
+        <p style="position: static; background: #eee; padding: 10px;">
+            Parágrafo com position: static (padrão)
+          </p>
+</head>
+
+
+<body style="padding: 0px; margin: 0px;">
+    <div style="position: relative; width: 40px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" width="40" />
+        <span style="
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background: red;
+          color: white;
+          border-radius: 50%;
+          font-size: 12px;
+          padding: 2px 5px;">
+
+ <div style="height: 250px; overflow-y: scroll; border: 1px solid gray;">
+    <div style="position: sticky; top: 0; background: #ffd54f; padding: 10px;">
+      Cabeçalho fixo com sticky
+    </div>
+    <div style="height: 600px;">
+      Muito conteúdo rolável...
+    </div>
+  </div>
+          
+
+        </span>
+      </div>
+
+</body>
+</html>

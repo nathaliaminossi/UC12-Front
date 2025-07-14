@@ -1,0 +1,7 @@
+/*Esse arquivo não contém estilos diretos. Ele serve apenas para importar os outros arquivos CSS em ordem*/
+
+
+@import url(reset.css);
+@import url(base.css);
+@import url(layout.css);
+@import url(components.css);

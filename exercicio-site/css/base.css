@@ -1,0 +1,76 @@
+
+
+
+/*BODY*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+/*HEADER*/
+header a {
+    color: white;
+    text-decoration: none;
+    transition: tranform 0.5s ease;
+}
+
+header a:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+  }
+ header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: rgb(255, 251, 251);
+   
+}
+/*MAIN*/
+main {
+    background-color: white;
+    
+
+}
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    gap: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+  h1 {
+    font: italic bold 20px verdana, geneva, tahoma, sans-serif;
+}
+.portfolio-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+.logo h1 {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    
+  }

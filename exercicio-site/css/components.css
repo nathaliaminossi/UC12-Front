@@ -1,0 +1,164 @@
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: rgb(255, 251, 251);
+   
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    gap: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    transition: tranform 0.5s ease;
+}
+
+header a:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+  }
+
+
+.banner_principal img {
+    display: flex;
+    width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+  .logo h1 {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    
+  }
+  
+
+
+.banner_texto h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+
+}
+
+.banner_texto p {
+    font-size: 18px;
+  
+}
+
+.banner_texto2 {
+    display: flex;
+    max-width: 2000px;
+    gap: 400px;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: end;
+    text-align:center;
+ 
+}
+.banner_texto2 p {
+    font-size: 20px;
+    align-items: center;
+   
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    gap: 25px;
+}
+
+.portfolio-item img {
+    display: flex;
+    width: 100%;
+    border-radius: 0px;
+ 
+  
+}
+
+
+.banner_texto3 {
+    background-image: url(image3.avif);
+    
+}
+.banner_texto3 h1 {
+    display: flex;
+    max-width: 2000px;
+    gap: 400px;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: end;
+    text-align:center;
+ 
+}
+.cards:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color:#000000;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #67676d;
+}
+
+.footer-DA {
+
+    color: aliceblue;
+}
+
+.footer-links a {
+  
+    margin-top: 10px;
+    font-size: 14px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    gap: 25px;
+}
+
+.portfolio-item img {
+    width: 500px;
+    height: 500px;
+    border-radius: 0;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #333;
+}
+.portfolio-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    
+}
+
+
+button:hover {
+    background-color: #67676d;
+}

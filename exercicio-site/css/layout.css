@@ -1,0 +1,129 @@
+header {
+    display: flex;
+    position: fixed; 
+    top: 0;           
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #62676B;
+    color: rgb(58, 60, 61);
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    transition: background-color 1s ease;
+}
+
+main {
+    background-color: white;
+    
+
+}
+
+
+.banner_principal {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    max-width: 1200px;
+    height: 80vh;
+    
+  
+}
+.banner_texto {
+    display: flex;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+#banner {
+    height: 1000px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+    background-image: url(fundo.avif);
+    background-color: #f2f2f2; /* opcional: cor de fundo clara */
+    margin: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+#cards {
+
+    display: flex;
+    background-color: white;
+    color: #000000;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 200px;
+    gap: 3px;
+    background-image: url(details.png);
+ 
+
+}
+#segundo_banner {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 60px;
+    background-color: white;
+  
+}
+
+#terceiro_banner {
+    height: 800px;
+    width: 100%; /* use toda a largura do site */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; 
+    margin: 50px auto;
+    background-image: url(image3.avif); /* adicione o caminho da imagem aqui */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* mantém a imagem inteira */
+
+}
+
+#portfolio {
+    margin-top: 50px;
+    padding: 110px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.banner_texto2 {
+    display: flex;
+    max-width: 2000px;
+    gap: 400px;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: end;
+    text-align:center;
+ 
+}
+.logo {
+    position: absolute;
+    top: 40vh;
+    left: 20vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+  }
+  .cards {
+    display: flex;
+    width: 450px;
+    height: 450px; /* Corrigido de 350x para 350px */
+    text-align: center;
+    flex-direction: column;
+    transition: transform 0.5 ease;
+}

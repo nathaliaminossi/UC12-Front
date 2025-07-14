@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <section id="form-container">
+
+        <form action="#" method="post">
+            <h2>Cadastro de usuario</h2>
+        
+            <!-- Campo de texto -->
+            <label for="nome">Nome</label>
+             <input type="text" id="nome" name="nome" required>
+        
+            <!-- Campo de email -->
+            <label for="email">Email</label>
+             <input type="email" name="email" id="email" required>
+        
+            <!-- Campo de senha -->
+            <label for="senha">Senha</label>
+             <input type="password" name="senha" id="senha">
+        
+            <!-- checkbox (multipla escolha) -->
+            <label for="">Interesses</label> 
+
+            <div> <input type="checkbox" name="Interesses" value="js"> JS</div>
+            <div><input type="checkbox" name="Interesses" value="css"> CSS</div>
+            <div> <input type="checkbox" name="Interesses" value="html"> HTML</div>
+            
+        
+            <!-- Radio (escolha unica )-->
+            <label> Sexo</label>
+            <div>
+             <input type="radio" name="sexo" value="Masculino"> M 
+             <input type="radio" name="sexo" value="Feminino"> F  
+             <input type="radio" name="sexo" value="Nao-informado"> Prefiro não mencionar  
+            </div>
+        
+             <!-- Select (Lista suspensa) -->  
+             <label for="curso">Curso desejado:</label>
+             <select name="curso" id="curso">
+               <option value="html">HTML</option>  
+               <option value="css">CSS</option> 
+               <option value="js">JS</option> 
+             </select> 
+        
+             <!-- Area de texto (mensagem)-->
+             <label for="mensagem">Mensagem</label>
+             <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        
+             <!-- Botao de envio-->
+             <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+   
+
+ </main>
+</body>
+</html>
