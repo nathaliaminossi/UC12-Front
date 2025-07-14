@@ -1,0 +1,215 @@
+/* Zera o espaçamento interno (padding), externo (margin) e define a box-sizing como border-box
+   Isso garante que o padding e a borda sejam incluídos na largura e altura dos elementos */
+   * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --cor-principal: #347fa1;
+    --fonte-base: 'Arial', sans-serif;
+  }
+  
+  /* Define a fonte padrão da página como Arial ou uma fonte sans-serif */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-principal);
+    font-family: var(--fonte-base);
+  }
+  
+  /* Estiliza o cabeçalho (header):
+     - Fundo preto
+     - Texto branco
+     - Layout em linha (flexbox), com espaçamento entre os itens
+     - Centraliza os itens verticalmente
+     - Adiciona um espaçamento interno (padding)
+     - Permite que os itens quebrem linha se necessário (wrap) */
+  header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 1s ease;
+  }
+  
+  /* Estiliza os links dentro do header:
+     - Texto branco
+     - Remove o sublinhado
+     - Margem ao redor para separação */
+  header a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    transition: tranform 0.5s ease;
+  }
+  
+  header a:hover {
+    transform: scale(1.2);
+    color: white;
+  }
+
+  /* Ícone do menu ("hamburger") que só aparece no mobile:
+     - Inicialmente oculto */
+     
+  .show {
+    display: none;
+  }
+  
+  /* Estiliza o menu de navegação (nav):
+     - Mostra os itens em linha (horizontalmente)
+     - Espaçamento entre os itens
+     - Adiciona transição suave para as propriedades max-height e opacity */
+  nav {
+    display: flex;
+    gap: 10px;
+    transition: max-height 0.5s ease, opacity 0.5 ease; /* OBS: falta 's' em '0.5 ease', corrigido abaixo */
+  }
+
+  #banner {
+    height: 80vh;
+    background-image: url(https://gremio.blob.core.windows.net/imgs-site/lg-noticias-feliz-aniversa-rio--gra-mio--24544.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+header.change {
+    background-color: rgba(0, 0, 0, 0.547);
+}
+  
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem ;
+    padding: 50px 0px 25px 0px;
+}
+
+.cards {
+    width: 20vw;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.087);
+    transition: transform 0.5 ease;
+}
+
+.cards img {
+    width: 100%;
+   
+}
+.cards:hover {
+    transform: scale(1.1);
+}
+@keyframes fade-in {
+    /*inicia*/
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide-in {
+    from {transform: translateX(-100%); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+}
+@keyframes zomm-in {
+    from {transform: scale(0.5); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+   }
+   @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .pulse {
+    animation: pulse 1s infinite;
+  }
+.fade-in {
+    animation: fade-in 2s ease forwards;
+}
+
+.fade-in {
+    animation: slide-in 1s ease;
+}
+.zoom-in {
+    animation: zoom-in 1s ease;
+    }
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding: 50px;
+}
+
+
+  .box {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .box.visible {
+    animation: fade-in 1s forwards;
+  } 
+
+
+
+
+
+
+
+
+
+  /* MEDIA QUERY: Aplica estilos somente quando a largura da tela for até 1125px */
+  @media (max-width: 1125px) {
+  
+    /* Altera a direção do header para coluna (um item abaixo do outro)
+       Adiciona espaçamento vertical entre os elementos */
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Agora o ícone do menu é exibido em dispositivos móveis */
+    .show {
+      display: flex;
+    }
+  
+    /* Menu de navegação no mobile:
+       - Mostra os itens em coluna (verticalmente)
+       - Centraliza os itens
+       - Largura total da tela
+       - Inicialmente oculto (max-height 0 e opacity 0)
+       - Transição suave para a exibição do menu */
+    nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-height: 0;
+      opacity: 0;
+  
+      /* Transição suave:
+         Quando max-height ou opacity forem alteradas (via classe, clique, etc.),
+         a mudança será animada por 0.5s com curva "ease" */
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+
+    
+    /* Quando a classe 'ativo' for adicionada ao nav (fazemos isso por JS),
+       o menu é exibido:
+       - Altura máxima suficiente para mostrar os itens
+       - Opacidade total */
+    nav.ativo {
+      max-height: 500px; /* valor ajustável conforme o conteúdo do menu */
+      opacity: 1;
+    }
+  }

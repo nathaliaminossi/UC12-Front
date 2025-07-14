@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    padding: 15px;
+}
+.show {
+ 
+    cursor: pointer;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+
+        display: flex;
+        gap: 10px;
+        transition: max-height 0.5s ease, opacity 1s ease;
+        align-items: center;
+        opacity: 0;
+       
+
+}
+nav.ativo {
+    max-height: 500px;
+    opacity: 1s;
+}
+/*Mobile/Celular*/
+/* Para telas pequenas, até 600px */
+@media (max-width: 1125px) {
+    header {
+     
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        display:none;
+
+    }
+    }
+
+
+/*Tablet*/
+/* Para tablets, entre 601px e 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+     
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav {
+        display:none;
+
+    }
+}
+
+/*Desktop*/
+/* Para telas grandes, acima de 1024px */
+@media (min-width: 1025px) {
+  .show {
+    display: none;
+  }
+}

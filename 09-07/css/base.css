@@ -1,0 +1,62 @@
+/* Estilo padrao para as paginas 
+variaveis CSS (CSS Custom properties)
+*/
+
+:root {
+    --cor-primaria: #e6752a;
+    --cor-secundaria: #333333;
+    --cor-fundo: #f5f5f5;
+    --cor-fonte: white ;
+    --font-base: 'Arial', sans-serif;
+    --cor-confirm: #367c16;
+    --cor-cancel: #e00b0b;
+    --small: 12px;
+    --large: 64px;
+    --Xlarge: 100px;
+  }
+
+  header {
+    background-color: var(--cor-secundaria);
+    width: 100%;
+  }
+  body {
+    
+        font-family: var(--font-base);
+        font-size: var(--regular);
+        line-height: 1.5;
+        color: var(--cor-fonte);
+        background-color: var(--cor-fundo);
+
+      
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+  }
+
+  a {
+    color: var(--cor-fonte);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+
+  button {
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
